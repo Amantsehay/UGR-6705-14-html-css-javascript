@@ -3,194 +3,689 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Portfolio Website </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <header>
-
-    </header>   
-
+<body class="main-content">
     <main>
-        <nav class="desktop-nav">
-            <section><h2 class="logo">Amanuel</h2></section>
-            <section class="desktop-nav-rotate">
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience"> Experience</a></li>
-                    <li><a href="#contacts">Contact Me</a></li>
-                </ul>
-            </section>
-        </nav>
+        <!-- The Home Section -->
 
-        <nav class="mobile-nav">
-            <section><h2 class="logo">Amanuel</h2></section>
-            <section class="hamgerbur-menu">
-                <div class="hamburger-icon" onClick="toggleMenu()">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+        <section class="home-section section-main section-main-one active-section" id="home">
+            <div class="swiper mySwiper row container">
+                <div class="swiper-pagination row ">
                 </div>
-                <ul class="menu-links">
-                    <li><a href="#" onClick="toggleMenu()">Home</a></li>
-                    <li><a href="#about" onClick="toggleMenu()">About Me</a></li>
-                    <li><a href="#experience" onClick="toggleMenu()"> Experience</a></li>
-                    <li><a href="#contacts" onClick="toggleMenu()">Contact Me</a></li>
-                </ul>
-            </section>
-        </nav>
-        <section class="profile">
-        <section class="hero">
-            <figure class="hero-img">
-                <img src="./assets/images/profile-picture.jpg" alt="hero-img">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide row ">
+                  <div class="swiper-content">
+                    <div class="name-text">
+                        <h1 class="name">
+                            <span style="font-size:xx-large;">ሰላም</span>
+                        </h1>
+                        <p >
+                          You can call me Amanuel Tsehay. I'm a full-stack web developer and a....
+                        </p>
 
-            </figure>
+                    </div>
+                    <div class="btn-container">
+                        <a href="./resources/amanuel-resume.pdf" class="btn btn-primary" download="resume-amanuel.pdf">
+                            <span class="btn-text">
+                                Download CV  
+                            </span>
+                            <span class="btn-icon">
+                                <i class="fas fa-download"></i>
+                            </span>
+                        
+                        </a>
+
+                    </div>
+                   
+                  </div>
+                  <div class="swiper-img row ">
+                        
+                    <div class="h-shape"></div>
+                    <div class="image">
+
+                        <!-- <img src="./images/black-level-PhotoRoom.png-PhotoRoom.png" alt="">  -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide row ">
+                    <div class="swiper-content">
+                        <div class="name-text">
+                            <h1 class="name">
+                                <span> Salut</span>
+                            </h1>
+                            <p style="text-transform: uppercase;">
+                                la vie est belle.
+                            </p>
+
+                        </div>
+                      
+                    </div>
+                      <div class="swiper-img row ">
+                        <div class="h-shape"></div>
+                        <div class="image">
+
+                            <!-- <img src="./images/21266941-removebg-preview.png" alt="">  -->
+                            </div>
+                        </div>
+
+                  </div>
+
+                  <div class="swiper-slide row ">
+                      <div class="swiper-img row swiper-img-third ">
+                        <div class="h-shape">
+
+                        </div>
+                        <div class="image">
+                            <img  src="./images/Amanuel_s-Image-transformed.png" alt="">
+
+                        </div>
+                        
+                      </div>
+                    <div class="swiper-content ">
+                        <div class="name-text">
+                            <h1 class="name">
+                                Hi, I'm <span> Amanuel Tsehay</span>
+                            </h1>
+                            <p >
+                               Dont ask what your code can do for you, ask what you can do for your code.
+                            </p>
+
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-button-next row">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <!-- <div class="swiper-button-prev"></div> -->
+              </div>
+
+
+
         </section>
-        <section class="section-container">
-            <div class="hero-text">
-                <p class="greeting">Hello, I'm</p>
-                <p class="title"> Amanuel</p>
-                <p class="content">A Front-End  And Back-End Developer</p>
+
+
+
+
+
+
+
+
+
+<!-- The About Section  -->
+
+        <section class="section section-main section-main-two section-about" id="about">
+            <!-- <div class="relative-control">
+                <div class="controls">
+                    <div class="control control-6" data-id="hobbies">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                </div>
             </div>
-        <section class="btn-container">
-            <button class="btn btn-resume"
-            onclick="window.location.href='./assets/Wireframe.pdf'" 
-            >
-            Resume
-            </button>
-            <button class="btn btn-contact"
-            onclick="window.location.href='#contacts'" 
-            >
-            Contact
-            </button>
-        </section>
+            -->
+            
 
-        <!-- The social containers -->
-        <section class="social-container">
-            <section class="socials instagram-link">
-                <a href="https://www.instagram.com/aman_tsehay/" target="_blank">
-                    <img 
-                class="icon"
-                src="./assets/images/instagram-logo_icon.png" 
-                alt="instagram">
-                </a>
+            <div class="intro-title">
+                <h2>About <span class="me-text"> Me </span><span class="backgroud-text">About Me</span></h2>
+            </div>
+            <div class="about-container">
                 
-            </section>
-            <section class="socials linkedin-link">
-                <a href="https://www.linkedin.com/in/amanuel-wondim-30843523a/" target="_blank">
-                    <img 
-                    class="icon"
-                    src="./assets/images/linkedin_icon.png" 
-                    alt="linkedin" 
-            
-                    >
-                </a>
-               
-            </section>
+                <div class="about-me-left">
+                    <h2 class="info-title"></h2>
+                    <p>
+                        I am a full-stack web developer and a computer science student at Addis Ababa University. I have a passion for web development and love to create for web and mobile devices.
+                    </p>
 
-            <section class="socials github-link">
-                <a href="https://github.com/Amantsehay" target="_blank">
-                    <img
-                    class="icon"
-                  src="./assets/images/github_icon.png"
-                  alt="github">
-                </a>
-              </section>
-            
-        </section>
-        </section>
-    </section>
+                    <div class="btn-container about-btn-container">
+                        <a href="#" class="btn btn-primary">
+                            <span class="btn-text">
+                                Download CV  
+                            </span>
+                            <span class="btn-icon">
+                                <i class="fas fa-download"></i>
+                            </span>
+                        
+                        </a>
 
-    <!-- Moving hero images  --> 
-    <!-- There will be four images moving sideways -->
-    <section class="moving-hero">
-        <figure>
-            <img src="./assets/images/avatar-profile.png" alt="hero-img">
-        </figure>
-        <figure>
-            <img src="./assets/images/avatar-profile.png" alt="hero-img">
-        </figure>
-        <figure>
-            <img src="./assets/images/avatar-profile.png" alt="hero-img">
-        </figure>
-        <figure>
-            <img src="./assets/images/avatar-profile.png" alt="hero-img">
-        </figure>
-        <!-- two pointers to left and right using bootstrap-->
-        <section class="pointers-left-right">
-            <span class="left-pointer">&#8592;</span>
-            <span class="right-pointer">&#8594;</span>
+                    </div>      
+                </div>
+
+                
+
+                <div class="about-me-right">
+                    <div class="about-item">
+                        <div class="about-text">
+                            <p class="about-large-text">2</p>
+                            <p class="small-text">Projects <br> Started</p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-text">
+                            <p class="about-large-text">0</p>
+                            <p class="small-text">Projects <br> <Compteled></Compteled></p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-text">
+                            <p class="about-large-text">0</p>
+                            <p class="small-text">Projects <br> Started</p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-text">
+                            <p class="about-large-text">0</p>
+                            <p class="small-text">Projects <br> Started</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-skills">
+                <h3 class="skills-title">
+                   My Skills 
+                </h3>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="progress-title">HTML</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                80%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line html">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">Css</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                60%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line css">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">JavaScript</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                60%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line js">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">React</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                60%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line react">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">NodeJS</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                50%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line node">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">Java</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                80%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line java">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">Python</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                70%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line python">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">Spring Boot</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                60%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line spring-boot">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">Bootstrap</p>
+                        <div class="progresses">
+                            <div class="progress-value progress-text">
+                                30%
+                            </div>
+                            <div class="progress">
+                                <span class="prog-line bootstrap">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+<!-- The Projects Section  -->
+
+        <section class="section section-main section-main-three section-projects" id="projects">
+            <div class="intro-title">
+                <h2>My <span class="me-text"> Pojects </span><span class="backgroud-text">Projects</span></h2>
+            </div>
+
+            <p class="portfolio-text"> Some of the Projects I'm currently working on</p>
+
+            <div class="project-container">
+
+                <div class="a-project">
+                    <div class="proj-img-text">
+
+                        <p>Twitter Clone </p>
+                        <div class="project-image">
+                            <img src="./images/react-twitter-clone.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hover-item">
+                        <p class="proj-description">A twitter clone project to learn the in and out of enterprise web development</p>
+                        <div>
+                            <h4>Project Source</h4>
+                            <div class="icons">
+                                <a href="https://github.com/Amantsehay/Ctwitter" target="_blank" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="a-project">
+                    <div class="proj-img-text">
+                        <p>Car Sales Website </p>
+                        <div class="project-image">
+                            <img src="./images/car-sales-picture.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hover-item">
+                        <p class="proj-description">A car sales website to learn the in and out of enterprise web development</p>
+                        <div>
+                            <h4>Project Source</h4>
+                            <div class="icons">
+                                <a href="https://github.com/Amantsehay/TreasureCart" target="_blank" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="a-project">
+                    <div class="proj-img-text">
+
+                        <p>Dev Scrape</p>
+                        <div class="project-image">
+                            <img src="./images/dev-scrap-picture.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hover-item">
+                        <p class="proj-description">A Web Scraping project to learn to have a good understanding of data intensive projects and AI </p>
+                        <div>
+                            <h4>Project Source</h4>
+                            <div class="icons">
+                                <a href="link-to-github" target="_blank" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </section>  
-<!-- four pointer circles -->
-        <section class="pointer-circles">
-            <!-- <span>&#9675;</span>
-            <span>&#9675;</span>
-            <span>&#9675;</span>
-            <span>&#9675;</span> -->
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </section>
-
-  
-    </section>
-
-
-    <!-- -->
-
-    <!-- <section class="about-section"> -->
 
 
 
-            <!-- <iframe title="about-page-iframe" src="about.html" width="100%" height="auto" frameborder="0"></iframe> -->
-    <!-- </section> -->
-    
-    </main>
-    <!-- THE FOOOTER CONTAINING SOME LINKS AND COPYRIGHT DESC -->
-    <footer>
-        <!-- T -->
-        <!-- The copy right and some text -->
-        <section>
-            <p class="copy-right">© <span class="current-time">Current Time:</span> Amanuel Wondim. All rights reserved.</p>
-            <!-- year -->
-        </section>
-        <section class="footer-socials">
 
-        <section class="socials twitter-link">
-            <a href="https://twitter.com/amanueltsehay1" target="_blank">
-                <img
-            class="icon"
-            src="./assets/images/twitter-x_logo.png"
-            alt="twitter"
-            >
-            </a>
+
+        <section class="section section-main section-main-four section-blogs" id="blogs">
             
-          </section>
 
-          <section class="socials facebook-link">
-            <a href="https://www.facebook.com/amanuel.tsehay.391" target="_blank" alt="facebook-page">
-                <img
-                class="icon"
-                src="./assets/images/facebook-logo_icon.png" 
-                alt="facebook">
-            </a>
-              
+            <div class="intro-title">
+                <h2>Hobbi <span class="me-text"> es Ho </span><span class="backgroud-text">bies</span></h2>
+            </div>
+            <div class="hobbies-container">
+                
+                <figure>
+                    <img src="./images/reading-books.png" alt="Reading Icon">
+                    <figcaption>Exploring new worlds and gaining knowledge through literature.</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="./images/tennis-fun-1-1398467.jpg" alt="Table Tennis Icon">
+                    <figcaption>Engaging in fast-paced and competitive table tennis matches.</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="./images/hiking-picture.png" alt="Hiking Icon">
+                    <figcaption>Exploring nature, staying active, and enjoying scenic trails.</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="./images/video-gaming-pic.png" alt="Video Gaming Icon">
+                    <figcaption>Immersive gaming experiences and virtual adventures.</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="./images/muddy-football.jpg" alt="Football Icon">
+                    <figcaption>Football but socked in the mud.</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="./images/james-bond.png" alt="Movies Icon">
+                    <figcaption>Enjoying a variety of movies across 
+                        different genres. By genres, I meant spies.
+                         .</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src="./images/foodie-tour.jpg" alt="Foodie Tour Icon">
+                    <figcaption>Devou... I meant exploring different cultural cuisine</figcaption>
+                </figure>
+
+            </div>
+           
+
+        </section>    
+
+
+
+
+
+
+<!-- 
+        <section class="section section-main section-main-four section-blogs" id="blogs">
+            <div class="blogs-container">
+                <div class="intro-title">
+                    <h2>My<span class="me-text"> Blogs </span><span class="backgroud-text">Blogs</span></h2>
+                </div>
+
+                <div class="blogs">
+                    <div class="blog">
+                        <div class="blog-image">
+                            <img src="./images/baby.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h4>Is is really worth it?</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ex consectetur,.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image">
+                            <img src="./images/baby.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h4>Is is really worth it?</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ex consectetur,.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image">
+                            <img src="./images/baby.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h4>Is is really worth it?</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ex consectetur,.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog-image">
+                            <img src="./images/baby.png" alt="">
+                        </div>
+                        <div class="blog-text">
+                            <h4>Is is really worth it?</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam ex consectetur,.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section> -->
+
+<!-- The Contact Section  -->
+
+        <section class="section section-main-five section-contact" id="contact">
+
+            <div class="contact-container">
+                <div class="intro-title">
+                    <h2>Contact<span class="me-text"> Me </span><span class="backgroud-text">Contact Me</span></h2>
+                </div>
+
+                <div class="contact-content">
+                    <div class="left-contact">
+                        <h4 class="title-know">Let's Know Each Other</h4>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa fa-map-marker"></i>
+                                    <h4>Location</h4>
+                                </div>
+                                <p class="contact-item-description">Addis Ababa, Ethiopia</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                    <h4>Email</h4>
+                                </div>
+                                <p class="contact-item-description"> <a href = "mailto: amanueltsehay11@gmail.com">amanueltsehay11@gmail.com</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa fa-user-graduate"></i>
+                                    <h4>Education</h4>
+                                </div>
+                                <p class="contact-item-description"> Addis Ababa University, Ethiopia</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-phone"></i>
+                                    <h4>Location</h4>
+                                </div>
+                                <p class="contact-item-description"> Addis Ababa, Ethiopia</p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa fa-language"></i>
+                                    <h4>Languages</h4>
+                                </div>
+                                <p class="contact-item-description"> Amharic, English, French</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://www.linkedin.com/in/amanuel-wondim-30843523a/" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="contact-icon">
+                                <a href="https://github.com/Amantsehay" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="contact-icon">
+                                <a href="https://www.instagram.com/aman_tsehay/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="contact-icon">
+                                <a href="https://www.facebook.com/amanuel.tsehay.391" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="contact-icon">
+                                <a href="https://twitter.com/amanueltsehay1" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" name="name" id="name" placeholder="Name" required>
+                                <input type="text" name="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="subject" id="subject" placeholder="Subject" required>   
+                            </div>
+
+                            <div class="input-control">
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="input-control btn-submit">
+                                <input type="submit" value="Send Message" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+
         </section>
 
-        <section class="blog-link">
-            <a href="blogs.html">
-                <img class="icon" 
-                src="./assets/images/blog_icon.png" 
-                alt="blog-image">
-            </a>
 
-        </section>
-        </section>
 
+        <section class="section section-main section-main-six section-hobbies" id="hobbies">
+        </section>
+    </main>
+
+
+
+    <div class="controls">
+        
+            <div class="control control-1 active-btn"   data-id="home">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="control control-2"   data-id="about">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <!-- the project icos -->
+            <div class="control control-3"   data-id="projects">
+                <i class="fa-solid fa-project-diagram"></i>
+            </div>
+            <!-- Hobbies icon  -->
+            <div class="control control-4"   data-id="blogs">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="control control-5"   data-id="contact">
+                <i class="fa-solid fa-envelope"></i>
+
+        </div>
+    </div>
+
+    <div class="theme-btn">
+       <i class="fas fa-adjust"></i>
+    </div>
+
+
+    <!-- the hubmerger menu -->
+    <div class="hamburger-icon">
+        <div class="lines">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+       
+        <div class="controls">
+        
+            <div class="control control-1 active-btn"   data-id="home">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="control control-2"   data-id="about">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <!-- the project icos -->
+            <div class="control control-3"   data-id="projects">
+                <i class="fa-solid fa-project-diagram"></i>
+            </div>
+            <div class="control control-4"   data-id="blogs">
+                <i class="fa fa-gamepad"></i>
+            </div>
+            <div class="control control-5"   data-id="contact">
+                <i class="fa-solid fa-envelope"></i>
+
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="footer-class">
+        <p>© 2023 Amanuel Tsehay. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </body>
 </html>
