@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+
+    </header>   
+
+    <main>
+        <nav class="desktop-nav">
+            <section><h2 class="logo">Amanuel</h2></section>
+            <section class="desktop-nav-rotate">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience"> Experience</a></li>
+                    <li><a href="#contacts">Contact Me</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="mobile-nav">
+            <section><h2 class="logo">Amanuel</h2></section>
+            <section class="hamgerbur-menu">
+                <div class="hamburger-icon" onClick="toggleMenu()">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#" onClick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onClick="toggleMenu()">About Me</a></li>
+                    <li><a href="#experience" onClick="toggleMenu()"> Experience</a></li>
+                    <li><a href="#contacts" onClick="toggleMenu()">Contact Me</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="profile">
+        <section class="hero">
+            <figure class="hero-img">
+                <img src="./assets/images/profile-picture.jpg" alt="hero-img">
+
+            </figure>
+        </section>
+        <section class="section-container">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <p class="title"> Amanuel</p>
+                <p class="content">A Front-End  And Back-End Developer</p>
+            </div>
+        <section class="btn-container">
+            <button class="btn btn-resume"
+            onclick="window.location.href='./assets/Wireframe.pdf'" 
+            >
+            Resume
+            </button>
+            <button class="btn btn-contact"
+            onclick="window.location.href='#contacts'" 
+            >
+            Contact
+            </button>
+        </section>
+
+        <!-- The social containers -->
+        <section class="social-container">
+            <section class="socials instagram-link">
+                <a href="https://www.instagram.com/aman_tsehay/" target="_blank">
+                    <img 
+                class="icon"
+                src="./assets/images/instagram-logo_icon.png" 
+                alt="instagram">
+                </a>
+                
+            </section>
+            <section class="socials linkedin-link">
+                <a href="https://www.linkedin.com/in/amanuel-wondim-30843523a/" target="_blank">
+                    <img 
+                    class="icon"
+                    src="./assets/images/linkedin_icon.png" 
+                    alt="linkedin" 
+            
+                    >
+                </a>
+               
+            </section>
+
+            <section class="socials github-link">
+                <a href="https://github.com/Amantsehay" target="_blank">
+                    <img
+                    class="icon"
+                  src="./assets/images/github_icon.png"
+                  alt="github">
+                </a>
+              </section>
+            
+        </section>
+        </section>
+    </section>
+
+    <!-- Moving hero images  --> 
+    <!-- There will be four images moving sideways -->
+    <section class="moving-hero">
+        <figure>
+            <img src="./assets/images/avatar-profile.png" alt="hero-img">
+        </figure>
+        <figure>
+            <img src="./assets/images/avatar-profile.png" alt="hero-img">
+        </figure>
+        <figure>
+            <img src="./assets/images/avatar-profile.png" alt="hero-img">
+        </figure>
+        <figure>
+            <img src="./assets/images/avatar-profile.png" alt="hero-img">
+        </figure>
+        <!-- two pointers to left and right using bootstrap-->
+        <section class="pointers-left-right">
+            <span class="left-pointer">&#8592;</span>
+            <span class="right-pointer">&#8594;</span>
+        </section>  
+<!-- four pointer circles -->
+        <section class="pointer-circles">
+            <!-- <span>&#9675;</span>
+            <span>&#9675;</span>
+            <span>&#9675;</span>
+            <span>&#9675;</span> -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+
+  
+    </section>
+
+
+    <!-- -->
+
+    <!-- <section class="about-section"> -->
+
+
+
+            <!-- <iframe title="about-page-iframe" src="about.html" width="100%" height="auto" frameborder="0"></iframe> -->
+    <!-- </section> -->
+    
+    </main>
+    <!-- THE FOOOTER CONTAINING SOME LINKS AND COPYRIGHT DESC -->
+    <footer>
+        <!-- T -->
+        <!-- The copy right and some text -->
+        <section>
+            <p class="copy-right">© <span class="current-time">Current Time:</span> Amanuel Wondim. All rights reserved.</p>
+            <!-- year -->
+        </section>
+        <section class="footer-socials">
+
+        <section class="socials twitter-link">
+            <a href="https://twitter.com/amanueltsehay1" target="_blank">
+                <img
+            class="icon"
+            src="./assets/images/twitter-x_logo.png"
+            alt="twitter"
+            >
+            </a>
+            
+          </section>
+
+          <section class="socials facebook-link">
+            <a href="https://www.facebook.com/amanuel.tsehay.391" target="_blank" alt="facebook-page">
+                <img
+                class="icon"
+                src="./assets/images/facebook-logo_icon.png" 
+                alt="facebook">
+            </a>
+              
+        </section>
+
+        <section class="blog-link">
+            <a href="blogs.html">
+                <img class="icon" 
+                src="./assets/images/blog_icon.png" 
+                alt="blog-image">
+            </a>
+
+        </section>
+        </section>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
